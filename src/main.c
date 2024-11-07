@@ -40,8 +40,9 @@ int main(int argc, char **argv){
         fprintf(output, "\n");
 
     }
-
-    printf("Sorted and printed %d numbers to %s\n", numbersAmount, argv[2]);
+    argc == 3 ?
+        printf("Sorted and printed %d numbers to %s\n", numbersAmount, argv[2]):
+        printf("Sorted and printed %d numbers to output\n", numbersAmount);
     fclose(output);
     free(numberList);
     return 0;
