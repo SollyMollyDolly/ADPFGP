@@ -5,7 +5,7 @@
 
 int main(void){
     unsigned short quantity;
-    printf("Quantity of numbers to print: ");
+    printf("Quantity of numbers to print (max 65.535): ");
     scanf("%hu", &quantity);
 
     FILE *outputFile = fopen("random_list", "w");
